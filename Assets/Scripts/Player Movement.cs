@@ -7,10 +7,12 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5.0f;
     private float horizontalInput;
     private float forwardInput;
-    private float xRangeMin = -0.5f;
-    private float zRangeMin = -0.5f;
-    private float xRangeMax = 3.5f;
-    private float zRangeMax = 7.5f;
+
+    // Will make it custom fit to the board dimensions soon
+    private float xRangeMin = -0.25f;
+    private float zRangeMin = -0.25f;
+    private float xRangeMax = 3.25f;
+    private float zRangeMax = 7.25f;
 
 
     // Start is called before the first frame update
@@ -29,24 +31,8 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
 
-        if (transform.position.x < xRangeMin)
-        {
-            transform.position = new Vector3(xRangeMin, transform.position.y, transform.position.z);
-        }
-
-        if (transform.position.x > xRangeMax)
-        {
-            transform.position = new Vector3(xRangeMax, transform.position.y, transform.position.z);
-        }
-
-        if (transform.position.z < zRangeMin)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zRangeMin);
-        }
-
-        if (transform.position.z > xRangeMax)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zRangeMax);
-        }
+        float xPos = Mathf.Clamp(transform.position.x, -0.25f, 3.25f);
+        float zPos = Mathf.Clamp(transform.position.z, -0.25f, 7.25f);
+        transform.position = new Vector3(xPos, transform.position.y, zPos);
     }
 }

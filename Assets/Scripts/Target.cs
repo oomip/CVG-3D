@@ -23,6 +23,9 @@ public class Target : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
 
+        float xPos = Mathf.Clamp(transform.position.x, -0.25f, 3.25f);
+        float zPos = Mathf.Clamp(transform.position.z, -0.25f, 7.25f);
+        transform.position = new Vector3(xPos, transform.position.y, zPos);
 
         //forwardInput = Input.GetKeyDown(KeyCode.Y);
         //backwardInput = Input.GetKeyDown(KeyCode.H);
