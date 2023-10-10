@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a4e6a83f6e43a8ab8627cbe610220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorTile: {fileID: 7957492000242641753, guid: 11aeb232913fe4fed8ba3a7aa1cf7362, type: 3}
+  floorTile1: {fileID: 7957492000242641753, guid: 11aeb232913fe4fed8ba3a7aa1cf7362, type: 3}
+  floorTile2: {fileID: 7957492000242641753, guid: de22c889368e648cc97d73ea77c208f2, type: 3}
 --- !u!4 &258325382
 Transform:
   m_ObjectHideFlags: 0
