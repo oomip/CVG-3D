@@ -15,9 +15,4 @@ public class Attack : MonoBehaviour
     {
         
     }
-
-    private void Attack()
-    {
-        
-    }
 }
