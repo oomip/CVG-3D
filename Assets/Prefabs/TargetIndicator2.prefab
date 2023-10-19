@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5984114054929353722}
   - component: {fileID: 6120280341091779874}
   - component: {fileID: 2689541608555108316}
-  - component: {fileID: 3233065602555944658}
+  - component: {fileID: -1956477014633383206}
   m_Layer: 0
-  m_Name: TargetIndicator
+  m_Name: TargetIndicator2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c6fd1f1690f884ad4a62158cd12d432c, type: 2}
+  - {fileID: 2100000, guid: a123a86355a9b4412a4e17fed54c6ff6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3233065602555944658
+--- !u!114 &-1956477014633383206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,6 +93,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2137607631108025255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 012fd9dd5fa864d7c978196da722b762, type: 3}
+  m_Script: {fileID: 11500000, guid: a69cdd14202384df89b62f9013da32c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveTargetSpeed2: 5
+  targetIndicator: {fileID: 0}
